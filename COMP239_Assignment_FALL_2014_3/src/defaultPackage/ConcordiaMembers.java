@@ -8,13 +8,21 @@ public class ConcordiaMembers {
 		private String concordiaID;		
 		
 		
-		ConcordiaMembers(String firstName, String lastName, String concordiaID){
+	
+		
+		public ConcordiaMembers(String firstName, String lastName, String concordiaID){
 			this.firstName=firstName;
 			this.lastName=lastName;
 			this.concordiaID=concordiaID;
 			
 		}
 		
+		public ConcordiaMembers() {
+			
+		}
+
+
+
 		public String getFirstName() {
 			return firstName;
 		}
