@@ -35,7 +35,7 @@ public class Students extends ConcordiaMembers implements PaymentInterface{
 	}
 
 
-	@Override
+	
 	public double payment() {
 		if(status == StudentStatus.GRADUATE_TA){
 			return HOURLY_RATE_GRADUATE*hoursWorked();
@@ -68,6 +68,7 @@ public class Students extends ConcordiaMembers implements PaymentInterface{
 		return userEntry;
 		
 	}
+
 	
 	
 }
