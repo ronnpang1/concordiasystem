@@ -3,20 +3,22 @@ package defaultPackage;
 import java.util.Scanner;
 	
 public class Students extends ConcordiaMembers implements PaymentInterface{
-	private StudentStatus status;
-	boolean entry;
-	private int contractHours;
+	private StudentStatus status=StudentStatus.ALUMNI;
+	boolean entry=false;
+	private int contractHours=0;
 	final private double HOURLY_RATE = 11.50;
 	final private double HOURLY_RATE_GRADUATE = HOURLY_RATE*1.2;
 	Scanner myKey = new Scanner(System.in);
+
+	public Students(){}
 	
-	public Students(String firstName, String lastName, String concordiaID, StudentStatus status, int contractHours) {
+	//public Students(String firstName, String lastName, String concordiaID, StudentStatus status, int contractHours) {
 	
-		super(firstName, lastName, concordiaID);
+		//super(firstName, lastName, concordiaID);
 		
-		this.status = status;
-		this.contractHours = contractHours;
-		}
+		//this.status = status;
+		//this.contractHours = contractHours;
+		//}
 	
 	public StudentStatus getStatus() {
 		return status;
@@ -34,7 +36,7 @@ public class Students extends ConcordiaMembers implements PaymentInterface{
 		this.contractHours = contractHours;
 	}
 
-
+	
 	
 	public double payment() {
 		if(status == StudentStatus.GRADUATE_TA){

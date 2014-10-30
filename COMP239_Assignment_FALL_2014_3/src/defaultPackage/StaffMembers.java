@@ -21,6 +21,12 @@ public class StaffMembers extends ConcordiaMembers implements PaymentInterface {
 	
 	}
 	
+	
+
+	public StaffMembers() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public Staffstatus getStatus() {
 		return status;
 	}
